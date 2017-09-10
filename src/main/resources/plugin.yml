@@ -1,0 +1,28 @@
+name: Mechanics
+main: com.jianyuan.mechanics.Mechanics
+version: ${project.version}
+author: Lang_Yue
+commands:
+  mechanics:
+   description: Mechanics Command
+   aliases: mec
+permissions:
+  Mechanics.*:
+    description: Gives access to all DeathPenalty actions and commands
+    default: op
+    children:
+      Mechanics.Disintegrator.*:
+        default: op
+        children:
+          Mechanics.Disintegrator.place: true
+          Mechanics.Disintegrator.break: true
+          Mechanics.Disintegrator.other:
+            # 用户是否可以权限使用他人粉碎机 即使该粉碎机为私有的 请勿乱给
+            default: op
+      Mechanics.command.*:
+        default: op
+        children:
+          Mechanics.command.reload:
+            default: op
+          Mechanics.command.debug:
+            default: op

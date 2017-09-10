@@ -1,0 +1,18 @@
+config-version: 1.0
+debug: true
+GeneratesBlockWorlds:
+- ASkyBlock
+- ASkyBlock_nether
+- ASkyBlock_the_end
+GeneratesBlocks:
+ Granite:
+   id: 1
+   data: 1
+   chance: 10
+HellTreeWorlds:
+- ASkyBlock_nether
+HellTrees:
+ GENERIC:
+   trunk: '13:0'
+   leaf: '87:0'
+   chance: 15
